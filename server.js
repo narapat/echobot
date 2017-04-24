@@ -14,6 +14,7 @@ var bot = new builder.UniversalBot(connector);
 bot.dialog('/', function (session) {
     
     //respond with user's message
+    session.send("Hi " + session.message.from.name + " !");
     session.send("You said " + session.message.text);
 });
 
